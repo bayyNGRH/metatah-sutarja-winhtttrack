@@ -292,7 +292,6 @@ header {
 } */
 
 .hero-body {
-  height: 61vh;
   width: 100%;
   color: #000;
   position: absolute;
@@ -329,12 +328,12 @@ header {
 }
 
 .kepada-tamu {
-  font-size: 23px;
+  font-size: 18px;
   margin-bottom: -5px;
 }
 
 .kepada-tamu-gelar {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
