@@ -753,7 +753,7 @@ header {
 .acara .penutup {
   font-family: "Modernline";
   letter-spacing: -2px;
-  font-size: 22px;
+  font-size: 23px;
   margin-top: 30px;
   margin-bottom: 30px;
   color: #c29b4e;
@@ -793,7 +793,8 @@ header {
   margin-bottom: 4%;
 }
 
-@media (min-width: 576px) {
+/* original: min-width: 576px */
+@media (min-width: 568px) {
   .grid-item,
   .grid-sizer {
     width: 46%;
