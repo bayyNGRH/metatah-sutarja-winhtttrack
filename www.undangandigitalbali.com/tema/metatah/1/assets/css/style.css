@@ -266,8 +266,9 @@ a:focus {
 /* HERO */
 header {
   position: relative;
+  height: 100%;
   height: 100vh;
-  height: 100svh;
+  height: 100dvh;
 }
 
 .hero {
@@ -275,6 +276,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 60vh;
+  height: 60dvh;
 }
 
 .hero--slide1 {
@@ -371,6 +373,7 @@ header {
 @media (min-width: 768px) {
   .hero {
     height: 100vh;
+    height: 100svh;
   }
 
   .hero-body {
