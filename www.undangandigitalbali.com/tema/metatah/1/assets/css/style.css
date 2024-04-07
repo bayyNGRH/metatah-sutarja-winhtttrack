@@ -267,12 +267,13 @@ a:focus {
 header {
   position: relative;
   height: 100vh;
+  height: 100svh;
 }
 
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   height: 60vh;
 }
 
