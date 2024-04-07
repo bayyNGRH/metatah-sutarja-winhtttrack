@@ -1252,7 +1252,8 @@ footer .protokol-item p {
 .modal-penerima {
   margin-top: 4px;
   margin-bottom: 6px;
-  font-size: 26px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .modal-dari {
