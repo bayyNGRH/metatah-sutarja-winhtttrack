@@ -114,6 +114,22 @@
                 $('#showNotifgift2').fadeOut('slow');
             }, 3000); //  1000 = 1detik	
         }
+
+		document.addEventListener('DOMContentLoaded', function() {
+		// Retrieve query string
+		const queryString = document.location.search;
+		// Create URLSearchParams object
+		const urlParams = new URLSearchParams(queryString);
+		// Get the value of 'mengundang' parameter
+		const namatamu = urlParams.get("mengundang");
+		// Select the <span> element
+		const mengundangPlaceholder = document.getElementById('mengundang-placeholder');
+		// Set the content of <span> based on the URL parameter
+		mengundangPlaceholder.textContent = namatamu ? namatamu : "Di Tempat";
+	});
+
+
+
 	</script>
 	<style>
 	    .intro .section-img-right{
@@ -164,7 +180,8 @@
 			<p class="paragraph-modal">Kepada</p>
             <p class="paragraph-modal">Bapak/Ibu/Saudara/i</p>
             <h2 class="modal-penerima">
-                Di Tempat            </h2>
+				<span id="mengundang-placeholder">Di Tempat</span>
+			</h2>
 			<a href="#intro"class="btn btn-md btn-default btn-modal smoothScroll" id="btn-open">Buka Undangan</a>
 		</div>
 	</header>
@@ -617,7 +634,7 @@
 <script src="../../../../undangandigitalbali.com/assets/js/masonry.pkgd.min.js"></script>
 <script src="../../../../undangandigitalbali.com/assets/js/slick.min.js"></script>
 <script src="../../../../undangandigitalbali.com/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="../../../../unpkg.com/ionicons%405.2.3/dist/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
 <script src="../../../../unpkg.com/aos%402.3.1/dist/aos.js"></script>
 <script src="assets/js/script.js"></script>
 
