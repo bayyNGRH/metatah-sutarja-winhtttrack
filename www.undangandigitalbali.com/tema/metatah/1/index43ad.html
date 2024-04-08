@@ -121,16 +121,18 @@
 		// Create URLSearchParams object
 		const urlParams = new URLSearchParams(queryString);
 		// Get the value of 'mengundang' parameter
-		const namatamu = urlParams.get("mengundang");
+		let namatamu = urlParams.get("mengundang");
+		// Replace hyphens with spaces
+		if (namatamu) {
+			namatamu = namatamu.replace(/-/g, ' ');
+		}
 		// Select the <span> element
 		const mengundangPlaceholder = document.getElementById('mengundang-placeholder');
 		// Set the content of <span> based on the URL parameter
 		mengundangPlaceholder.textContent = namatamu ? namatamu : "Di Tempat";
 	});
-
-
-
 	</script>
+	
 	<style>
 	    .intro .section-img-right{
 	        opacity: .5;
